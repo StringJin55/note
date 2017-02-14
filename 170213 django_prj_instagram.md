@@ -168,3 +168,29 @@ Attributes
 
 * author (ForienKey, User)
 * post (ForienKey, Post)
+
+
+로그인 숙제
+
++ 수업시간에 로그인폼 이용해서 로그인 페이지 구현
+
+### 유저모델 상속받아서 확장하기
+`from django.contrib.auth.base_user import AbstractBaseUser`
+
+커맨드+클릭 으로 AbstractBaseUser안을 살펴보았다.
+
+rm db.sqlite3 
+데이터베이스를 날리고 시작한다.
+migrations도 다 지움
+
+setting.py 에 AUTH_USER_MODEL 지정
+
+[Specifying a custom user model](https://docs.djangoproject.com/en/1.10/topics/auth/customizing/#specifying-a-custom-user-model)
+보고 실습한다
+
+1. username field 만들기
+2. baseusermanager 상속받는 클래스 작성
+3. create_user, create_superuser 만들기
+
+PermissionsMixin 상속
+REQUIRED_FIELDS 채워준다.
