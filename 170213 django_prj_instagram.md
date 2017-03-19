@@ -170,6 +170,8 @@ Attributes
 * post (ForienKey, Post)
 
 
+170214
+
 로그인 숙제
 
 + 수업시간에 로그인폼 이용해서 로그인 페이지 구현
@@ -194,3 +196,22 @@ setting.py 에 AUTH_USER_MODEL 지정
 
 PermissionsMixin 상속
 REQUIRED_FIELDS 채워준다.
+
+
+170215
+
+1. post-list 보여주기
+
+linkbreak 줄바꿈 표현해주지만 문단을 p태그로 감싼다
+linebreakbr 줄바꿈을 표현할때 p태그로 안묶고 해준다
+truncatechars:100 100자까지만 끊어서 보여준다
+
+2. 파일업로드
+the view layer - file upload
+
+MEDIA_URL
+MEDIA_ROOT
+설정
+
+context_processor : 딕셔너리로 반환됨. 템플릿이 렌더링될때 공통으로 사용하는 context들로 여기에 정해주면 렌더링되는 템플릿들에서 전부 이 딕셔너리를 사용할 수 있다. 
+contenxt_processors.media를 정해준다.

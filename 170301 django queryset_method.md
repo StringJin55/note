@@ -1,0 +1,1 @@
+[QuerySet API reference](https://docs.djangoproject.com/en/1.10/ref/models/querysets/#queryset-api-reference)
